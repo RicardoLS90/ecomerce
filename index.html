@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Reem+Kufi+Fun:wght@400;700&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="shortcut icon" href="./assetes/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="./style.css">
+  <title>E-comerce</title>
+</head>
+<body>
+  <!--header-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav_logo">
+        <img class="nav_logo_img" src="./assetes/logowebchico.png" alt="storelogo">
+      </a>
+    <div class="nav_menu">
+      <ul class="nav_list">
+        <li class="nav_item">
+          <a href="#filter" class="nav_link active_link">Home</a> 
+        </li>
+        <li class="nav_item">
+          <a href="#products-content" class="nav_link">Products</a>
+        </li>
+      </ul>
+    </div> 
+    <div class="nav-button">
+      <div class="nav_shop">
+        <i class='bx bxs-cart'></i>
+        <span class=".counterNav"></span>
+      </div>
+    </div> 
+    </nav>
+    <!--shoping cart-->
+    <div class="cart show-cart hidde">
+      <div class="close">
+        <i class='bx bx-window-close'></i>
+      </div>
+      <h2 class="cart-title">My Cart</h2>
+      <div class="cart-container">
+        <div class="cart-products" id="cart-products">
+          <div class="cart-empty">
+          <h2 class="cart-text1">Your cart is empty</h2>
+          <img src="./assetes/emptycart.png" alt="empty">
+          <p class="cart-text1">Add items to your cart by clicking on "ADD TO CART"</p>
+        </div>
+        </div>
+        <div class="cart-totals">
+          <span class="counterCart count">0 Products</span>
+          <span class="totalCart count">$0.00</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  
+
+  <main class="main">
+    <section class="home">
+      <div class="home_container container grid">
+        <div class="home_imgcont" >
+          <img src="./assetes/spiderman.png" alt="" class="home_img">
+          <div class="home_info">
+            <h1 class="home_title">SPIDER-MAN FUNKO POP</h1>
+            <P class="home_descrip">SPIDER FUNKO POP Puedes 
+              pedirlo alguna otra figura para tu colección, solo escríbenos.
+              Tipo: Figura Funko POP
+              Marca: S.H.FIGUARTS
+              Altura aproximada: 14cm</P>
+              <span class="home_price">$25</span>
+              <div class="home_button">
+                <a href="#products-content">
+                  <button class="spiderman-btn">GO TO FUNKO</button>
+                </a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Botton filters-->
+    <section class="products_menu" id="filter">
+      <div class="product_container">
+        <ul class="filters">
+          <li class="item_filters">
+            <input class="button_filter showAll" type="button" value="Show All">
+            <span class="stock"> Show all Products</span>
+          </li>
+          <li class="item_filters">
+            <input class="button_filter hulkBtn" type="button" value="Hulk">
+            <span class="stock"> Hulk FUNKO</span>
+          </li>
+          <li class="item_filters">
+            <input  class="button_filter wolvBtn" type="button" value="Wolverine">
+            <span class="stock"> Wolverine FUNKO</span>
+          </li>
+        </li>
+        <li class="item_filters">
+          <input class="button_filter ironBtn" type="button" value="Iron Man">
+          <span class="stock"> Iron Man FUNKO</span>
+        </li>
+        </ul>
+        <!--products-->
+        
+        <div class="products_content" id="products-content">
+          
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer section">
+    <div class="footer__container container grid">
+      <div class="footer__content">
+        <h3 class="footer__title">Our information</h3>
+  
+        <ul class="footer__list">
+          <li>Guayaquil - Ecuador</li>
+        </ul>
+      </div>
+      <div class="footer__content">
+        <h3 class="footer__title">About Us</h3>
+  
+        <ul class="footer__links">
+          <li>
+            <a href="#" class="footer__link">Support Center</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Customer Support</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">About Us</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Copy Right</a>
+          </li>
+        </ul>
+      </div>
+  
+      <div class="footer__content">
+        <h3 class="footer__title">Product</h3>
+  
+        <ul class="footer__links">
+          <li>
+            <a href="#" class="footer__link">Hulk</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Wolverine</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Iron Man</a>
+          </li>
+        </ul>
+      </div>
+  
+      <div class="footersocial">
+        <h3 class="footer__title">Social</h3>
+  
+        <ul class="footer__social">
+          <a href="https://www.facebook.com/" target="blank" class="footer_social-link">
+            <i class="bx bxl-facebook bx-lg"></i>
+          </a>
+  
+          <a href="https://twitter.com/" target="blank" class="footer_social-link">
+            <i class="bx bxl-twitter bx-lg"></i>
+          </a>
+  
+          <a href="https://www.instagram.com/" target="blank" class="footer_social-link">
+            <i class="bx bxl-instagram bx-lg"></i>
+          </a>
+        </ul>
+      </div>
+    </div>
+  
+    <span class="footer__copy">All rigths reserved</span>
+  </footer>
+  
+</body>
+<script src="./app.js"></script>
+</html>
